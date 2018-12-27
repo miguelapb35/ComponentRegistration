@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <title>Vue.js</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+    <link rel='stylesheet' href="prism.css">
+    <link rel="stylesheet" href="cheatsheet.css">
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="container content">
+              <!-- <i class="is-large fab fa-discord"></i> -->
+              <i class="is-large fas fa-code"></i>
+              <h1 class="title">Code <em>All</em> The Things</h1>
+              <h3 class="subtitle">
+                Component Registration
+              </h3>
+              <a href="https://github.com/#" target="_blank" class="button is-primary is-large">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Github</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-12">
+            <div class="content is-medium">
+          <h3 class="title is-3">Snippets ¯\_(ツ)_/¯</h3>
+              <div class="box">
+                <h4 id="const" class="title is-3">Component Names</h4>
+                <article class="message is-primary">
+                  <span class="icon has-text-primary">
+                  <i class="fab fa-js"></i>
+                  </span>
+                  <div class="message-body">
+                    When registering a component, it will always be given a name. For example, in the global registration we’ve seen so far:
+                  </div>
+                </article>
+              <pre><code class="language-javascript">Vue.component('my-component-name', { /* ... */ })</code></pre>
+            </div>
+            <div class="box">
+              <h4 id="let" class="title is-3">Name Casing</h4>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fab fa-js"></i>
+                </span>
+                <div class="message-body">
+                  
+                  With kebab-case
+                </div>
+              </article>
+            <pre><code class="language-javascript">Vue.component('my-component-name', { /* ... */ })</code></pre>
+              <article class="message is-primary">
+                <span class="icon has-text-primary">
+                  <i class="fab fa-js"></i>
+                </span>
+                <div class="message-body">
+                  With PascalCase
+                </div>
+              </article>
+            <pre><code class="language-javascript">Vue.component('MyComponentName', { /* ... */ })</code></pre>
+          </div>
+          <h3 class="title is-3">More to Come...</h3>
+          <div class="box">
+            <h4 id="lorem" class="title is-4">More to come...</h4>
+            <article class="message is-primary">
+              <div class="message-body">
+                When defining a component with PascalCase, you can use either case when referencing its custom element. That means both <my-component-name> and <MyComponentName> are acceptable. Note, however, that only kebab-case names are valid directly in the DOM (i.e. non-string templates).
+              </div>
+            </article>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.js'></script>
+<script>
+  window.addEventListener('resize', () => {
+  const divs = document.querySelectorAll(".menu-list");
+  if (window.innerWidth < 768){
+    divs.forEach(div => div.classList.add("tags"));
+  }
+  else {
+    divs.forEach(div => div.classList.remove("tags"));
+  }
+});
+</script>  
+</body>
+</html>
